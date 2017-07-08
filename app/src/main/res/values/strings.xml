@@ -1,6 +1,7 @@
 <resources>
     <string name="app_name">Mkopo Popote</string>
     <string name="buttonText">Start</string>
+    <string name="buttonNext">Next</string>
     <string name="welcomeText">Welcome to Mkopo Popote</string>
     <string name="welcomeSubText">Thank you for installing - let us get you setup!</string>
     <string name="imageDescription">App Image</string>
