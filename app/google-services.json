@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "132872928369",
+    "firebase_url": "https://mkopopopote.firebaseio.com",
+    "project_id": "mkopopopote",
+    "storage_bucket": "mkopopopote.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:132872928369:android:c9d4dff4d60ae382",
+        "android_client_info": {
+          "package_name": "com.harlertechnologies.mkopopopote"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "132872928369-li4ju4vdl0trpolvls972cn3vh55fjrr.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.harlertechnologies.mkopopopote",
+            "certificate_hash": "912cc71378eb94684afadd33e2f083f287cfa7af"
+          }
+        },
+        {
+          "client_id": "132872928369-knco8ioj5u4divc35l62m6es7o1t9c37.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCVysXOYUuT3k_al6OJ1W_JLhqcKfehB5o"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "132872928369-knco8ioj5u4divc35l62m6es7o1t9c37.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
