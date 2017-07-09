@@ -2,7 +2,15 @@
     <string name="app_name">Mkopo Popote</string>
     <string name="buttonText">Start</string>
     <string name="buttonNext">Next</string>
-    <string name="welcomeText">Welcome to Mkopo Popote</string>
+    <string name="buttonVerify">Verify</string>
+    <string name="welcomeText">Welcome to Mkopo Popote.</string>
+    <string name="EnterMPESA">Enter your M-Pesa number.</string>
+    <string name="sendConfirm">We will send a confirmation code to verify this number, rates may apply to you.</string>
     <string name="welcomeSubText">Thank you for installing - let us get you setup!</string>
     <string name="imageDescription">App Image</string>
+    <string name="countryCode">+254</string>
+    <string name="verifyCodeHint">Verification Code</string>
+    <string name="now_logged_in">You are now logged in</string>
+    <string name="signed_success">Signed in Successfully</string>
+    <string name="sign_credential_fail">Failed to sign in</string>
 </resources>
