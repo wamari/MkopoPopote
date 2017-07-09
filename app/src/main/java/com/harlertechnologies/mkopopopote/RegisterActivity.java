@@ -25,8 +25,6 @@ import java.util.concurrent.TimeUnit;
 
 public class RegisterActivity extends AppCompatActivity {
 
-    Button buttonNext;
-
     private EditText phoneNumber;
     private EditText verificationCode;
     private String mVerificationID;
