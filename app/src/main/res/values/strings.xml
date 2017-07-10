@@ -7,6 +7,7 @@
     <string name="EnterMPESA">Enter your M-Pesa number.</string>
     <string name="sendConfirm">We will send a confirmation code to verify this number, rates may apply to you.</string>
     <string name="welcomeSubText">Thank you for installing - let us get you setup!</string>
+    <string name="hint">+2547XXXXXXXX</string>
     <string name="imageDescription">App Image</string>
     <string name="countryCode">+254</string>
     <string name="verifyCodeHint">Verification Code</string>

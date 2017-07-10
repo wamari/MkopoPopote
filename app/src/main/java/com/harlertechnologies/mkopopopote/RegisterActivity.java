@@ -1,13 +1,14 @@
 package com.harlertechnologies.mkopopopote;
 
 import android.content.Intent;
+import android.nfc.Tag;
 import android.os.StrictMode;
 import android.support.annotation.NonNull;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.text.TextUtils;
+import android.util.Log;
 import android.view.View;
-import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
 
@@ -68,8 +69,8 @@ public class RegisterActivity extends AppCompatActivity {
         if (TextUtils.isEmpty(telNo))
             return;
         PhoneAuthProvider.getInstance().verifyPhoneNumber(
-                telNo, //phone number to verify
-                60,
+                telNo,  //phone number to verify
+                60,     //timeout
                 TimeUnit.SECONDS,
                 RegisterActivity.this,
                 new PhoneAuthProvider.OnVerificationStateChangedCallbacks() {
@@ -89,7 +90,6 @@ public class RegisterActivity extends AppCompatActivity {
                     public void onCodeSent(String verificationId, PhoneAuthProvider.ForceResendingToken forceResendingToken) {
                         //now the code has been sent, save the verificationId we may need it
                         super.onCodeSent(verificationId, forceResendingToken);
-
                         mVerificationID = verificationId;
                     }
 
