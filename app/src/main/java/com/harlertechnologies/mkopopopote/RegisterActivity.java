@@ -55,6 +55,7 @@ public class RegisterActivity extends AppCompatActivity {
             public void onAuthStateChanged(@NonNull FirebaseAuth firebaseAuth){
                 if (firebaseAuth.getCurrentUser()!=null){
                     Toast.makeText(RegisterActivity.this, getString(R.string.now_logged_in) + firebaseAuth.getCurrentUser().getProviderId(), Toast.LENGTH_SHORT).show();
+                    //start next activity
                     Intent intent = new Intent(RegisterActivity.this, UserActivity.class);
                     startActivity(intent);
                     finish();
@@ -122,7 +123,6 @@ public class RegisterActivity extends AppCompatActivity {
         String code = verificationCode.getText().toString();
         if(TextUtils.isEmpty(code))
             return;
-
         signInWithCredential(PhoneAuthProvider.getCredential(mVerificationID, code));
     }
 }

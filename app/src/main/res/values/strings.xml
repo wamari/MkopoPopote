@@ -11,7 +11,11 @@
     <string name="imageDescription">App Image</string>
     <string name="countryCode">+254</string>
     <string name="verifyCodeHint">Verification Code</string>
-    <string name="now_logged_in">You are now logged in</string>
+    <string name="now_logged_in">You are now logged in </string>
     <string name="signed_success">Signed in Successfully</string>
     <string name="sign_credential_fail">Failed to sign in</string>
+    <string-array name="gender_array">
+        <item>Male</item>
+        <item>Female</item>
+    </string-array>
 </resources>
