@@ -14,11 +14,11 @@
     <string name="now_logged_in">You are now logged in </string>
     <string name="signed_success">Signed in Successfully</string>
     <string name="sign_credential_fail">Failed to sign in</string>
-    <string name="hintfname">First Name</string>
-    <string name="hintlname">Last Name</string>
-    <string name="hintidno">ID Number</string>
-    <string name="hintemail">Email Address</string>
-    <string name="hintdob">Date of Birth (DD-MMM-YYYY)</string>
+    <string name="hintFname">First Name</string>
+    <string name="hintLname">Last Name</string>
+    <string name="hintIdno">ID Number</string>
+    <string name="hintEmail">Email Address</string>
+    <string name="hintDob">Date of Birth (DD-MMM-YYYY)</string>
     <string name="buttonSubmit">Submit</string>
     <string-array name="gender_array">
         <item>-Select Gender-</item>
