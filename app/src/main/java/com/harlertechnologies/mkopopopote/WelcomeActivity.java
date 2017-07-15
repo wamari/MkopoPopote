@@ -53,7 +53,7 @@ public class WelcomeActivity extends AppCompatActivity {
         @Override
         public void onAuthStateChanged(@NonNull FirebaseAuth firebaseAuth) {
             if (firebaseAuth.getCurrentUser() != null) {
-                               //start next activity
+                //check if user is registered and then start appropriate activity
                 Intent intent = new Intent(WelcomeActivity.this, UserActivity.class);
                 startActivity(intent);
                 finish();

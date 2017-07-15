@@ -12,16 +12,15 @@
     <string name="countryCode">+254</string>
     <string name="verifyCodeHint">Verification Code</string>
     <string name="now_logged_in">You are now logged in </string>
-    <string name="signed_success">Signed in Successfully</string>
-    <string name="sign_credential_fail">Failed to sign in</string>
+    <string name="signed_success">Signed in Successfully </string>
+    <string name="sign_credential_fail">Failed to sign in </string>
     <string name="hintFname">First Name</string>
     <string name="hintLname">Last Name</string>
     <string name="hintIdno">ID Number</string>
     <string name="hintEmail">Email Address</string>
-    <string name="hintDob">Date of Birth (DD-MMM-YYYY)</string>
+    <string name="hintDob">Date of Birth (DD/MM/YYYY)</string>
     <string name="buttonSubmit">Submit</string>
     <string-array name="gender_array">
-        <item>-Select Gender-</item>
         <item>Male</item>
         <item>Female</item>
     </string-array>
