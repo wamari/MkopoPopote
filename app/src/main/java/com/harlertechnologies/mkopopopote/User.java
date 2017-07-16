@@ -13,13 +13,14 @@ public class User {
     String email;
     String dob;
     String gender;
+    String userMobile;
 
     //define a blank constructor
     public User(){
 
     }
 
-    public User(String userId, String firstName, String lastName, String idno, String email, String dob, String gender) {
+    public User(String userId, String firstName, String lastName, String idno, String email, String dob, String gender, String userMobile) {
         this.userId = userId;
         this.firstName = firstName;
         this.lastName = lastName;
@@ -27,6 +28,7 @@ public class User {
         this.email = email;
         this.dob = dob;
         this.gender = gender;
+        this.userMobile = userMobile;
     }
 
     //generate getters
@@ -58,5 +60,9 @@ public class User {
 
     public String getGender() {
         return gender;
+    }
+
+    public String getUserMobile(){
+        return userMobile;
     }
 }

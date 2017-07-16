@@ -29,6 +29,8 @@ public class RegisterActivity extends AppCompatActivity {
     private EditText verificationCode;
     private String mVerificationID;
 
+    String mobileNo;
+
     private FirebaseAuth mAuth;
     private FirebaseAuth.AuthStateListener mAuthListener;
 
@@ -54,8 +56,12 @@ public class RegisterActivity extends AppCompatActivity {
             public void onAuthStateChanged(@NonNull FirebaseAuth firebaseAuth){
                 if (firebaseAuth.getCurrentUser()!=null){
                     Toast.makeText(RegisterActivity.this, getString(R.string.now_logged_in) + firebaseAuth.getCurrentUser().getProviderId(), Toast.LENGTH_SHORT).show();
+
                     //start next activity
                     Intent intent = new Intent(RegisterActivity.this, UserActivity.class);
+                    //pass phone number to next activity
+                    mobileNo = phoneNumber.getText().toString();
+                    intent.putExtra("User phone", mobileNo);
                     startActivity(intent);
                     finish();
                 }

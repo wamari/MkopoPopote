@@ -28,6 +28,7 @@ public class UserActivity extends AppCompatActivity {
     Spinner spinnerGender;
     Button buttonSubmit;
 
+
     //database reference object
 
     DatabaseReference databaseUsers;
@@ -80,6 +81,10 @@ public class UserActivity extends AppCompatActivity {
         String dob = editTextDOB.getText().toString().trim();
         String gender = spinnerGender.getSelectedItem().toString();
 
+        String userMobile = getIntent().getExtras().getString("User phone");
+
+        //TODO: check for duplicate accounts
+
         //check if values are filled or not
         if(!TextUtils.isEmpty(firstName)){
             // TODO: check input in other fields as well
@@ -87,12 +92,13 @@ public class UserActivity extends AppCompatActivity {
             String id = databaseUsers.push().getKey();
 
             //create a new user
-            User user = new User(id, firstName, lastName, idNo, email, dob, gender);
+            User user = new User(id, firstName, lastName, idNo, email, dob, gender, userMobile);
 
-            //store this in firebase database
+            //store this in Firebase database
             databaseUsers.child(id).setValue(user);
-
+            //inform user of account creation
             Toast.makeText(this, "Account created successfully!", Toast.LENGTH_LONG).show();
+
         }else{
             Toast.makeText(this, "Please enter First name", Toast.LENGTH_LONG).show();
         }
