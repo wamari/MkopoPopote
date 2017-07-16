@@ -98,7 +98,8 @@ public class UserActivity extends AppCompatActivity {
             databaseUsers.child(id).setValue(user);
             //inform user of account creation
             Toast.makeText(this, "Account created successfully!", Toast.LENGTH_LONG).show();
-
+            //start the Main Activity
+            //TODO: Start the main screen
         }else{
             Toast.makeText(this, "Please enter First name", Toast.LENGTH_LONG).show();
         }
